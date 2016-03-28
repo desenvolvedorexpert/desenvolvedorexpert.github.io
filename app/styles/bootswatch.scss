@@ -2,6 +2,8 @@
 // Bootswatch
 // -----------------------------------------------------
 
+@import "variables.scss";
+
 $web-font-path: "https://cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css" !default;
 @import url($web-font-path);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext);

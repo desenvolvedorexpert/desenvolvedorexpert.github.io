@@ -32,6 +32,7 @@ module.exports = function(config) {
       'bower_components/FitText.js/jquery.fittext.js',
       'bower_components/wow/dist/wow.js',
       'bower_components/jquery.easing/js/jquery.easing.js',
+      'bower_components/auth0-lock-passwordless/build/lock-passwordless.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
