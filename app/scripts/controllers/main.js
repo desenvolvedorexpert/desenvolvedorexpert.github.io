@@ -11,14 +11,12 @@ angular.module('welcomeApp')
   .controller('MainCtrl', function(auth0) {
 
     var vm = this;
-    vm.isAuthenticated = false;
 
     vm.login = function() {
       var options = {
         connections: ['facebook', 'github'],
         defaultLocation: 'BR',
-        callbackURL: document.location.href,
-        responseType: 'token',
+        callbackURL: 'https://github.com/desenvolvedorexpert/desenvolvedorexpert.github.io/tree/develop#welcome',
         autoclose: true,
         focusInput: false,
         popup: false,
