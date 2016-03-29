@@ -13,6 +13,9 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
   var serveStatic = require('serve-static');
 
+  // npm install --save-dev load-grunt-tasks
+  require('load-grunt-tasks')(grunt);
+
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
@@ -31,7 +34,19 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
-
+    shell: {
+      publish: {
+        command: [
+          'echo "\!dist/" >> .gitignore',
+          'git add dist',
+          'git commit -nam "PUBLISH"',
+          'git push origin `git subtree split --prefix dist -b master`:master --force',
+          'git branch -D master',
+          'git reset HEAD~1',
+          'git checkout -- .gitignore'
+        ].join('&&')
+      }
+    },
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -513,5 +528,9 @@ module.exports = function (grunt) {
     'newer:jscs',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'shell:publish',
   ]);
 };
