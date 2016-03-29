@@ -37,7 +37,7 @@
 
 <body id="page-top" ng-app="welcomeApp" ng-controller="MainCtrl as main">
   <!--[if lte IE 8]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" analytics-on>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
@@ -51,23 +51,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">{ desenvolvedor.expert(vc); }</a>
+        <a class="navbar-brand page-scroll" href="#page-top" analytics-on>{ desenvolvedor.expert(vc); }</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a class="page-scroll" href="#about">#1 Sacada</a>
+            <a class="page-scroll" href="#about" analytics-on>#1 Sacada</a>
           </li>
           <li>
-            <a class="page-scroll" href="#services">O que tem aqui?</a>
+            <a class="page-scroll" href="#services" analytics-on>O que tem aqui?</a>
           </li>
           <li>
-            <a class="page-scroll" href="#portfolio">Portfolio</a>
+            <a class="page-scroll" href="#portfolio" analytics-on>Portfolio</a>
           </li>
           <li>
-            <a class="page-scroll" href="#contact">Contato</a>
+            <a class="page-scroll" href="#contact" analytics-on>Contato</a>
           </li>
         </ul>
       </div>
@@ -86,7 +86,7 @@
           <footer class="text-right">Manifesto para <cite title="agilemanifesto.org">Desenvolvimento Ágil de Software</cite></footer>
         </blockquote>
         <p class="lead">Tudo que eu gostaria que algém tivesse me dito quando eu comecei a programar.</p>
-        <a ng-click="main.login()" class="btn btn-primary btn-xl">Saiba Agora &nbsp;&nbsp;&nbsp;<span class="fa fa-mouse-pointer"></span></a>
+        <a ng-click="main.login()" class="btn btn-primary btn-xl" analytics-on>Saiba Agora &nbsp;&nbsp;&nbsp;<span class="fa fa-mouse-pointer"></span></a>
       </div>
     </div>
   </header>
@@ -99,7 +99,7 @@
           <hr class="light">
           <p class="text-faded">A primeira sacada é que aqui tem tudo que você precisa para colocar seu novo website on-line agora mesmo!
             Todos os templates e temas são de código aberto, gratuito para download e fácil de usar. Sem restrições!</p>
-          <a ng-click="main.login()" class="btn btn-default btn-xl">Comece Agora!</a>
+          <a ng-click="main.login()" class="btn btn-default btn-xl" analytics-on>Comece Agora!</a>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
     <div class="container-fluid">
       <div class="row no-gutter">
         <div class="col-lg-4 col-sm-6">
-          <a href="#" class="portfolio-box">
+          <a href="#" class="portfolio-box" analytics-on>
             <img src="images/portfolio/1.jpg" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
@@ -167,7 +167,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#" class="portfolio-box">
+          <a href="#" class="portfolio-box" analytics-on>
             <img src="images/portfolio/2.jpg" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
@@ -182,7 +182,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#" class="portfolio-box">
+          <a href="#" class="portfolio-box" analytics-on>
             <img src="images/portfolio/3.jpg" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
@@ -197,7 +197,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#" class="portfolio-box">
+          <a href="#" class="portfolio-box" analytics-on>
             <img src="images/portfolio/4.jpg" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
@@ -212,7 +212,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#" class="portfolio-box">
+          <a href="#" class="portfolio-box" analytics-on>
             <img src="images/portfolio/5.jpg" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
@@ -227,7 +227,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a href="#" class="portfolio-box">
+          <a href="#" class="portfolio-box" analytics-on>
             <img src="images/portfolio/6.jpg" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
@@ -249,7 +249,7 @@
     <div class="container text-center">
       <div class="call-to-action">
         <h2>Download Gratuito basta se inscrever!</h2>
-        <a ng-click="main.login()" class="btn btn-default btn-xl wow tada">Baixe Agora!</a>
+        <a ng-click="main.login()" class="btn btn-default btn-xl wow tada" analytics-on>Baixe Agora!</a>
       </div>
     </div>
   </aside>
@@ -268,7 +268,7 @@
         </div>
         <div class="col-lg-4 text-center">
           <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-          <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+          <p><a href="mailto:your-email@your-domain.com" analytics-on>feedback@startbootstrap.com</a></p>
         </div>
       </div>
     </div>
@@ -289,8 +289,7 @@
         r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
     }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
+    ga('create', 'UA-51072076-1');
   </script>
 
   <!-- build:js(.) scripts/vendor.js -->
@@ -308,6 +307,9 @@
   <script src="bower_components/wow/dist/wow.js"></script>
   <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
   <script src="bower_components/auth0-lock-passwordless/build/lock-passwordless.js"></script>
+  <script src="bower_components/SHA-1/sha1.js"></script>
+  <script src="bower_components/angulartics/src/angulartics.js"></script>
+  <script src="bower_components/angulartics-google-analytics/lib/angulartics-google-analytics.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

@@ -33,6 +33,9 @@ module.exports = function(config) {
       'bower_components/wow/dist/wow.js',
       'bower_components/jquery.easing/js/jquery.easing.js',
       'bower_components/auth0-lock-passwordless/build/lock-passwordless.js',
+      'bower_components/SHA-1/sha1.js',
+      'bower_components/angulartics/src/angulartics.js',
+      'bower_components/angulartics-google-analytics/lib/angulartics-google-analytics.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
