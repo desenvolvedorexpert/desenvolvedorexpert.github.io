@@ -14,7 +14,7 @@ Esse projeto foi gerado com [yo angular generator](https://github.com/yeoman/gen
 version 0.15.1. E para começar siga os comando:
 
 ``` bash
-git clone https://github.com/desenvolvedorexpert/desenvolvedorexpert.github.io.git devexpert
+git clone -b develop https://github.com/desenvolvedorexpert/desenvolvedorexpert.github.io.git devexpert
 cd devexpert
 npm install
 bower install
