@@ -16,7 +16,7 @@ angular.module('welcomeApp')
       var options = {
         connections: ['facebook', 'github'],
         defaultLocation: 'BR',
-        callbackURL: 'https://github.com/desenvolvedorexpert/desenvolvedorexpert.github.io/tree/develop#welcome',
+        callbackURL: 'https://github.com/desenvolvedorexpert/desenvolvedorexpert.github.io/tree/develop#-desenvolvedorexpert-',
         autoclose: true,
         focusInput: false,
         popup: false,
